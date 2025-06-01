@@ -9,7 +9,7 @@
     "start_url": "/pwa2/",
     "icons" : [
         {
-            "src" : "./icon.png",
+            "src" : "./icone.png",
             "sizes" : "512x512",
             "type" : "image/png"
         }
