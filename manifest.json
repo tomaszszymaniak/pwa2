@@ -1,0 +1,20 @@
+{
+    "theme_color": "#095b54",
+    "background_color": "#095b54",
+    "display": "browser",
+    "scope": "/",
+    "start_url": "/pwa2/"
+    "icons": [
+  {
+    "src": "image2.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  },
+  {
+    "src": "image2.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }
+]
+  }
+  
