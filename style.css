@@ -1,0 +1,143 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f8ff;
+    color: #333;
+    padding: 1rem;
+    min-width: 320px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #0077b6;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.search input {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #0077b6;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search button:hover {
+    background-color: #005f87;
+}
+
+.error_message {
+    color: red;
+    font-weight: bold;
+}
+
+.weather, .air_pollution {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.weather h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.weather div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.weather img.weather_img {
+    width: 60px;
+    height: 60px;
+}
+
+.weather p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+}
+
+.weather_description {
+    text-align: center;
+    font-style: italic;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.air_pollution h3 {
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.air_pollution div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pollution_img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #333;
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.footer_text {
+    font-size: 0.7rem; 
+    color: rgba(0, 0, 0, 0.466); 
+    margin-top: 1rem;
+}
+
+/* Responsywność */
+@media (min-width: 600px) {
+    main {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .weather div {
+        gap: 2rem;
+    }
+}
