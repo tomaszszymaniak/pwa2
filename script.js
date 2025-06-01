@@ -32,6 +32,7 @@ const getWeather = () => {
         cityName.textContent = `${response.data.name}, ${response.data.sys.country}`;
         //Uzupełnić wszystkie dane pogodowe razem z jednostkami. Zaokrąglić do liczb całkowitych temperature i prędkość wiatru
         weatherImg.src = `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`;
+        weatherImg.style.display = 'block';
         weatherDescription.textContent = `${response.data.weather[0].description}`;
         temp.textContent = `${Math.round(response.data.main.temp)}℃`;
         feelsLike.textContent = `${Math.round(response.data.main.feels_like)}℃`;
@@ -72,6 +73,7 @@ const getWeather = () => {
             el.textContent = '';
         })
         weatherImg.src = '';
+        weatherImg.style.display = 'none';
         pollutionImg.style.backgroundColor = 'transparent';
 
     }).finally(() => {
